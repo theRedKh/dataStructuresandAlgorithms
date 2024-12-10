@@ -1,18 +1,22 @@
+/* Trying out selection sort
+* 9/12/24
+*/
 #include <stdio.h>
 
 int main(){
     
     //SELECTION SORT
-    int arr[] = {1,3,5,4,2,6};
-    int small = 0;
-    int j = 0;
-    int n=6;
+    int arr[] = {1,3,5,4,2,6}; //unsorted array
+    int small = 0; //smallest value pointer
+    int j = 0; //loops through the rest of the array
+    int n=6; //array size
 
+    //print unsorted array
     printf("Unsorted array: \n");
     for (int i=0; i < 6; i++){
         printf("%d ", arr[i]);
     }
-    printf("\n Sorted Array: \n");
+    printf("\nSorted Array: \n");
 
 
     for (int i = 0; i < n-1 ; i++){
